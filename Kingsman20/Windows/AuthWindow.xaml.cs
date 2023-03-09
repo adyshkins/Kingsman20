@@ -22,6 +22,13 @@ namespace Kingsman20.Windows
         public AuthWindow()
         {
             InitializeComponent();
+            //
+            //
+            //
+            //
+            //
+            //
+
         }
     }
 }
