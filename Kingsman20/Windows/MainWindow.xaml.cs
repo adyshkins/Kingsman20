@@ -27,8 +27,3 @@ namespace Kingsman20
     }
 }
 //
-//
-//
-//
-//
-//
