@@ -5,9 +5,79 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Kingsman20.Windows"
         mc:Ignorable="d"
-        Title="ServiceWindow" Height="450" Width="800"
+        Title="ServiceWindow" 
+        Height="768" Width="1024"
         WindowStartupLocation="CenterScreen">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Список услуг"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   FontSize="30"
+                   FontWeight="Bold"/>
+        <ListView x:Name="LvService" 
+                  Grid.Row="2" 
+                  d:ItemsSource="{d:SampleData ItemCount=5}"
+                  ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+            
+            <!-- Представление в виде таблицы -->
+            <!--<ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Название" Width="200" DisplayMemberBinding="{Binding ServiceName}"/>
+                    <GridViewColumn Header="Описание" Width="200" DisplayMemberBinding="{Binding Description}"/>
+                    <GridViewColumn Header="Цена" Width="200" DisplayMemberBinding="{Binding Price}"/>
+                    <GridViewColumn Header="Тип услуги" Width="200" DisplayMemberBinding="{Binding ServiceType.TypeName}"/>
+                </GridView>
+            </ListView.View>-->
+
+            <ListView.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel/>
+                </ItemsPanelTemplate>
+            </ListView.ItemsPanel>
+            
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Border BorderBrush="Gray"
+                            BorderThickness="2"
+                            Width="200"
+                            Height="300"
+                            Margin="16"
+                            CornerRadius="8">
+                        <StackPanel>
+                            <Image Height="180"
+                                   Width="200" 
+                                   Margin="8">
+                                <Image.Source>
+                                    <Binding Path ="Image">
+                                        <Binding.TargetNullValue>
+                                            <ImageSource>/Res/defImg.jpeg</ImageSource>
+                                        </Binding.TargetNullValue>
+                                    </Binding>
+                                </Image.Source>
+                            </Image>
+
+                            <TextBlock Text="{Binding ServiceName}"
+                                       FontSize="18"
+                                       Margin="5 3"/>
+                            <TextBlock Text="{Binding Price}"
+                                       FontSize="18"
+                                       Margin="5 3"/>
+                            <TextBlock Text="{Binding Description}"
+                                       FontSize="18"
+                                       Margin="5 3"
+                                       TextWrapping="Wrap" FontFamily="Arial Rounded MT Bold"/>
+                        </StackPanel>
+                       
+                    </Border>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </Grid>
 </Window>

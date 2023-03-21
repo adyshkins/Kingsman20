@@ -22,6 +22,12 @@ namespace Kingsman20.Windows
         public ServiceWindow()
         {
             InitializeComponent();
+            GetListService();
+        }
+
+        private void GetListService()
+        {
+            LvService.ItemsSource = ClassHelper.EF.Context.Service.ToList();
         }
     }
 }

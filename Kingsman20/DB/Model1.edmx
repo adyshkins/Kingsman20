@@ -88,6 +88,7 @@
           <Property Name="Description" Type="nvarchar" MaxLength="250" />
           <Property Name="Price" Type="decimal" Precision="11" Scale="2" Nullable="false" />
           <Property Name="ServiceTypeID" Type="int" Nullable="false" />
+          <Property Name="Image" Type="nvarchar" MaxLength="2048" />
         </EntityType>
         <EntityType Name="ServiceType">
           <Key>
@@ -569,6 +570,7 @@
           <Property Name="Description" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
           <Property Name="Price" Type="Decimal" Nullable="false" Precision="11" Scale="2" />
           <Property Name="ServiceTypeID" Type="Int32" Nullable="false" />
+          <Property Name="Image" Type="String" MaxLength="2048" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="MaterialService" Relationship="KingsmanModel.FK__MaterialS__Servi__31EC6D26" FromRole="Service" ToRole="MaterialService" />
           <NavigationProperty Name="OrderService" Relationship="KingsmanModel.FK__OrderServ__Servi__44FF419A" FromRole="Service" ToRole="OrderService" />
           <NavigationProperty Name="ServiceType" Relationship="KingsmanModel.FK__Service__Service__2E1BDC42" FromRole="Service" ToRole="ServiceType" />
@@ -870,6 +872,7 @@
           <EntitySetMapping Name="Service">
             <EntityTypeMapping TypeName="KingsmanModel.Service">
               <MappingFragment StoreEntitySet="Service">
+                <ScalarProperty Name="Image" ColumnName="Image" />
                 <ScalarProperty Name="ServiceTypeID" ColumnName="ServiceTypeID" />
                 <ScalarProperty Name="Price" ColumnName="Price" />
                 <ScalarProperty Name="Description" ColumnName="Description" />

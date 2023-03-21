@@ -39,6 +39,7 @@ namespace Kingsman20.Windows
             }
             else
             {
+                // если пользователь не найден
                 MessageBox.Show("Пользователя не существует", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
             }
 
