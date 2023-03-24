@@ -1,0 +1,108 @@
+﻿<Window x:Class="Kingsman20.Windows.RegistrationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Kingsman20.Windows"
+        mc:Ignorable="d"
+        Title="RegistrationWindow" 
+        Height="1000" 
+        Width="500"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        
+        <StackPanel VerticalAlignment="Center">
+            <TextBlock Text="Регистрация"
+                       FontSize="28"
+                       FontWeight="Bold"
+                       HorizontalAlignment="Center"
+                       Margin="0 10 0 0"/>
+
+            <TextBlock Text="Введите логин"
+                       FontSize="18"
+                       HorizontalAlignment="Center"
+                       Margin="0 50 0 0"/>
+            <TextBox x:Name="TbLogin"
+                     FontSize="18"                    
+                     Width="200"
+                     Height="30"
+                     Margin="0 8 0 0"/>
+
+            <TextBlock Text="Введите пароль"
+                       FontSize="18"
+                       HorizontalAlignment="Center"
+                       Margin="0 16 0 0"/>
+            <PasswordBox x:Name="PbPassword"
+                         FontSize="18"                    
+                         Width="200"
+                         Height="30"
+                         Margin="0 8 0 0"/>
+
+            <TextBlock Text="Введите фамилию"
+                       FontSize="18"
+                       HorizontalAlignment="Center"
+                       Margin="0 16 0 0"/>
+            <TextBox x:Name="TbLastName"
+                     FontSize="18"                    
+                     Width="200"
+                     Height="30"
+                     Margin="0 8 0 0"/>
+
+            <TextBlock Text="Введите имя"
+                       FontSize="18"
+                       HorizontalAlignment="Center"
+                       Margin="0 16 0 0"/>
+            <TextBox x:Name="TbFirstName"
+                     FontSize="18"                    
+                     Width="200"
+                     Height="30"
+                     Margin="0 8 0 0"/>
+
+            <TextBlock Text="Введите отчество"
+                       FontSize="18"
+                       HorizontalAlignment="Center"
+                       Margin="0 16 0 0"/>
+            <TextBox x:Name="TbMiddleName"
+                     FontSize="18"                    
+                     Width="200"
+                     Height="30"
+                     Margin="0 8 0 0"/>
+
+            <TextBlock Text="Введите телефон"
+                       FontSize="18"
+                       HorizontalAlignment="Center"
+                       Margin="0 16 0 0"/>
+            <TextBox x:Name="TbPhone"
+                     FontSize="18"                    
+                     Width="200"
+                     Height="30"
+                     Margin="0 8 0 0"/>
+
+            <TextBlock Text="Выберите пол"
+                       FontSize="18"
+                       HorizontalAlignment="Center"
+                       Margin="0 16 0 0"/>
+            <ComboBox x:Name="CmbGender"
+                     FontSize="18"                    
+                     Width="200"
+                     Height="30"
+                     Margin="0 8 0 0"/>
+
+            <Button x:Name="BtnReg" 
+                    Content="Войти"
+                    FontSize="18"                    
+                    Width="150"
+                    Height="40"
+                    Margin="0 40 0 0"
+                    Click="BtnReg_Click"/>
+        </StackPanel>
+
+        <TextBlock x:Name="BtnAuth" 
+                   VerticalAlignment="Bottom" 
+                   HorizontalAlignment="Center"
+                   Text="Авторизация"
+                   Margin="0 0 0 8"
+                   FontSize="16"
+                   Foreground="DarkBlue"/>
+    </Grid>
+</Window>

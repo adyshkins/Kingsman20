@@ -15,6 +15,8 @@
           <Property Name="Patronymic" Type="nvarchar" MaxLength="50" />
           <Property Name="Phone" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="GenderCode" Type="nvarchar" MaxLength="1" Nullable="false" />
+          <Property Name="Login" Type="nvarchar" MaxLength="50" />
+          <Property Name="Password" Type="nvarchar" MaxLength="50" />
         </EntityType>
         <EntityType Name="Employee">
           <Key>
@@ -480,6 +482,8 @@
           <Property Name="Patronymic" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Phone" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="GenderCode" Type="String" Nullable="false" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Name="Login" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="Gender" Relationship="KingsmanModel.FK__Client__GenderCo__36B12243" FromRole="Client" ToRole="Gender" />
           <NavigationProperty Name="Order" Relationship="KingsmanModel.FK__Order__ClientID__412EB0B6" FromRole="Client" ToRole="Order" />
         </EntityType>
@@ -790,6 +794,8 @@
           <EntitySetMapping Name="Client">
             <EntityTypeMapping TypeName="KingsmanModel.Client">
               <MappingFragment StoreEntitySet="Client">
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Login" ColumnName="Login" />
                 <ScalarProperty Name="GenderCode" ColumnName="GenderCode" />
                 <ScalarProperty Name="Phone" ColumnName="Phone" />
                 <ScalarProperty Name="Patronymic" ColumnName="Patronymic" />

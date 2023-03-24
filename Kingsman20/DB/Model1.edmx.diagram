@@ -4,20 +4,20 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="32a3d46e7c764e4980cbe79ab8394c32" Name="Diagram1" ZoomLevel="198">
-        <EntityTypeShape EntityType="KingsmanModel.Client" Width="1.5" PointX="0.75" PointY="20.125" />
-        <EntityTypeShape EntityType="KingsmanModel.Employee" Width="1.5" PointX="0.75" PointY="11" />
-        <EntityTypeShape EntityType="KingsmanModel.Gender" Width="1.5" PointX="1.5" PointY="23.5" />
-        <EntityTypeShape EntityType="KingsmanModel.Material" Width="1.5" PointX="3" PointY="7.625" />
-        <EntityTypeShape EntityType="KingsmanModel.MaterialService" Width="1.5" PointX="5.25" PointY="0.875" />
-        <EntityTypeShape EntityType="KingsmanModel.Order" Width="1.5" PointX="3" PointY="13.125" />
-        <EntityTypeShape EntityType="KingsmanModel.OrderService" Width="1.5" PointX="5.25" PointY="3.875" />
-        <EntityTypeShape EntityType="KingsmanModel.Position" Width="1.5" PointX="1.5" PointY="16.75" />
+      <Diagram DiagramId="32a3d46e7c764e4980cbe79ab8394c32" Name="Diagram1" ZoomLevel="149">
+        <EntityTypeShape EntityType="KingsmanModel.Client" Width="1.5" PointX="0.75" PointY="8" />
+        <EntityTypeShape EntityType="KingsmanModel.Employee" Width="1.5" PointX="0.75" PointY="16.625" />
+        <EntityTypeShape EntityType="KingsmanModel.Gender" Width="1.5" PointX="1.5" PointY="13.5" />
+        <EntityTypeShape EntityType="KingsmanModel.Material" Width="1.5" PointX="3" PointY="16.875" />
+        <EntityTypeShape EntityType="KingsmanModel.MaterialService" Width="1.5" PointX="5.25" PointY="3.875" />
+        <EntityTypeShape EntityType="KingsmanModel.Order" Width="1.5" PointX="3" PointY="10.25" />
+        <EntityTypeShape EntityType="KingsmanModel.OrderService" Width="1.5" PointX="5.25" PointY="0.75" />
+        <EntityTypeShape EntityType="KingsmanModel.Position" Width="1.5" PointX="1.5" PointY="21.375" />
         <EntityTypeShape EntityType="KingsmanModel.Service" Width="1.5" PointX="3" PointY="3.5" />
-        <EntityTypeShape EntityType="KingsmanModel.ServiceType" Width="1.5" PointX="0.75" PointY="4.125" />
-        <EntityTypeShape EntityType="KingsmanModel.Supplier" Width="1.5" PointX="3" PointY="0.75" />
-        <EntityTypeShape EntityType="KingsmanModel.SuppliesDelivery" Width="1.5" PointX="5.25" PointY="7.5" />
-        <EntityTypeShape EntityType="KingsmanModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="2.125" />
+        <EntityTypeShape EntityType="KingsmanModel.ServiceType" Width="1.5" PointX="0.75" PointY="4" />
+        <EntityTypeShape EntityType="KingsmanModel.Supplier" Width="1.5" PointX="3" PointY="25" />
+        <EntityTypeShape EntityType="KingsmanModel.SuppliesDelivery" Width="1.5" PointX="5.25" PointY="16.75" />
+        <EntityTypeShape EntityType="KingsmanModel.sysdiagrams" Width="1.5" PointX="2.75" PointY="7.125" />
         <AssociationConnector Association="KingsmanModel.FK__Client__GenderCo__36B12243" />
         <AssociationConnector Association="KingsmanModel.FK__Order__ClientID__412EB0B6" />
         <AssociationConnector Association="KingsmanModel.FK__Employee__Gender__3D5E1FD2" />

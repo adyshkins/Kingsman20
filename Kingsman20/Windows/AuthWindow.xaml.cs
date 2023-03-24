@@ -46,5 +46,12 @@ namespace Kingsman20.Windows
             
 
         }
+
+        private void BtnReg_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            RegistrationWindow registrationWindow = new RegistrationWindow();
+            registrationWindow.Show();
+            this.Close();
+        }
     }
 }
