@@ -79,5 +79,18 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
+
+
+        <Button x:Name="BtnAddService"
+                Grid.Row="3"
+                Width="40"
+                Height="40"
+                Background="{x:Null}"
+                BorderThickness="0"
+                HorizontalAlignment="Right"
+                Margin="0 0 20 0"
+                Click="BtnAddService_Click">
+            <Image Source="/Res/icons8-add-80.png"/>
+        </Button>
     </Grid>
 </Window>
