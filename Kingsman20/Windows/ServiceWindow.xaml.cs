@@ -38,5 +38,23 @@ namespace Kingsman20.Windows
             // Обновляем лист
             GetListService();
         }
+
+        private void BtnEdit_Click(object sender, RoutedEventArgs e)
+        {
+            var button = sender as Button;
+
+            if (button == null)
+            {
+                return;
+            }
+
+            var service = button.DataContext as DB.Service; // получаем выбранную запись
+
+
+            EditServiceWindow editServiceWindow = new EditServiceWindow(service);
+            editServiceWindow.ShowDialog();
+
+            GetListService();
+        }
     }
 }

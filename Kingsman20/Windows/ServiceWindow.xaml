@@ -47,7 +47,7 @@
                     <Border BorderBrush="Gray"
                             BorderThickness="2"
                             Width="200"
-                            Height="300"
+                            Height="350"
                             Margin="16"
                             CornerRadius="8">
                         <StackPanel>
@@ -73,6 +73,17 @@
                                        FontSize="18"
                                        Margin="5 3"
                                        TextWrapping="Wrap" FontFamily="Arial Rounded MT Bold"/>
+
+                            <Button x:Name="BtnEdit"
+                                    Width="40"
+                                    Height="40"
+                                    HorizontalAlignment="Left"
+                                    Margin="10 5 0 0"
+                                    Background="{x:Null}"
+                                    BorderThickness="0"
+                                    Click="BtnEdit_Click">
+                                <Image Source="/Res/icons8-edit-64.png"/>
+                            </Button>
                         </StackPanel>
                        
                     </Border>
