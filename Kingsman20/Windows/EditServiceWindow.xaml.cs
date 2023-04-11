@@ -27,7 +27,7 @@ namespace Kingsman20.Windows
         public EditServiceWindow()
         {
             InitializeComponent();
-            isEdit = false
+            isEdit = false;
         }
 
         public EditServiceWindow(DB.Service service)
