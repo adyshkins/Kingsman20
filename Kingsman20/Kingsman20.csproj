@@ -66,6 +66,7 @@
     </ApplicationDefinition>
     <Compile Include="ClassHelper\CartServiceClass.cs" />
     <Compile Include="ClassHelper\EF.cs" />
+    <Compile Include="ClassHelper\UserDataClass.cs" />
     <Compile Include="Windows\AddServiceWindow.xaml.cs">
       <DependentUpon>AddServiceWindow.xaml</DependentUpon>
     </Compile>

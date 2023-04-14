@@ -88,14 +88,29 @@
 
         <Button x:Name="BtnBack"
                 Content="Назад"
+                FontSize="18"
                 Grid.Row="3"
                 Width="100"
                 Height="40"
                 Background="{x:Null}"
                 BorderThickness="0"
-                HorizontalAlignment="Right"
+                HorizontalAlignment="Left"
                 Click="BtnBack_Click">
             
+        </Button>
+
+        <Button x:Name="BtnPay"
+                Content="Оформить заказ"
+                FontSize="18"
+                Grid.Row="3"
+                Width="200"
+                Height="40"
+                Background="{x:Null}"
+                BorderThickness="0"
+                Margin="0 0 20 0"
+                HorizontalAlignment="Right"
+                Click="BtnPay_Click">
+
         </Button>
     </Grid>
 </Window>

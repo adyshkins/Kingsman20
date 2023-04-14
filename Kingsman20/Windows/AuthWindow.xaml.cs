@@ -32,6 +32,9 @@ namespace Kingsman20.Windows
                 FirstOrDefault();
             if (userAuth != null)
             {
+                // сохраняем авторизованного пользователя
+                ClassHelper.UserDataClass.Employee = userAuth;
+
                 // переход на окно список услуг
                 ServiceWindow serviceWindow = new ServiceWindow();
                 serviceWindow.Show();
