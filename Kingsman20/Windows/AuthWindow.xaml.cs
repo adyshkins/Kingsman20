@@ -35,10 +35,32 @@ namespace Kingsman20.Windows
                 // сохраняем авторизованного пользователя
                 ClassHelper.UserDataClass.Employee = userAuth;
 
-                // переход на окно список услуг
+                switch (userAuth.PositionID)
+                {
+                    case 1:
+                        // переход на страницу директора
+
+                        break;
+
+                    case 2:
+                        // переход на страницу менеджера
+                        break;
+
+                    case 3:
+                        // переход на страницу партного
+                        break;
+
+                    default:
+                        // переход на окно список услуг
+                       
+
+                        break;
+                }
+
                 ServiceWindow serviceWindow = new ServiceWindow();
                 serviceWindow.Show();
                 this.Close();
+
             }
             else
             {

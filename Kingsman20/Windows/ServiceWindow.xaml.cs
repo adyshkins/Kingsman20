@@ -25,6 +25,11 @@ namespace Kingsman20.Windows
         {
             InitializeComponent();
             GetListService();
+            if (ClassHelper.UserDataClass.Employee.PositionID == 3)
+            {
+                BtnAddService.Visibility = Visibility.Collapsed;
+            }
+            
         }
 
         // получиние списка услуг
